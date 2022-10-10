@@ -1,3 +1,13 @@
+html{
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    background: #fff;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 .calculator{
     width: 375px;
     height: 812px;
@@ -14,11 +24,12 @@
     width: 75px;
     height: 75px;
     border-radius: 50%;
+    font-size: 30px;
 }
 
 .btn-0{
     border-radius: 37.5px;
-    width: 155px;
+    width: 165px;
 }
 
 .buttons{
@@ -27,4 +38,14 @@
     justify-content: space-between;
     padding: 10px;
     gap: 10px;
+}
+
+.num{
+    background-color: #313131;
+    color: #f6f6f6;
+}
+
+.mods{
+    color: #f6f6f6;
+    background-color: #f69a06;
 }
