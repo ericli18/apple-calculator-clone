@@ -8,6 +8,11 @@ html{
     -moz-osx-font-smoothing: grayscale;
 }
 
+button{
+    transition: all 0.07s;
+}
+
+
 .calculator{
     width: 375px;
     height: 812px;
@@ -71,4 +76,13 @@ html{
 
 .btn-percent, .btn-clear, .btn-delete{
     background-color: rgb(122, 122, 122);
+}
+
+.num-down{
+    background-color: rgb(122, 122, 122);
+}
+
+.mod-down{
+    color:#f69a06;
+    background-color: #f6f6f6;
 }
