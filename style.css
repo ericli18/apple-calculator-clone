@@ -8,8 +8,16 @@ html{
     -moz-osx-font-smoothing: grayscale;
 }
 
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+   }
+
 button{
-    transition: all 0.07s;
+    transition: all 0.25s;
 }
 
 

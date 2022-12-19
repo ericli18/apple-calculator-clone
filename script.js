@@ -1,3 +1,29 @@
+const display = document.querySelector(".display-input");
+
+let first = 0;
+let second = 0;
+let clicked = false;
+let displayValue = "";
+
+window.addEventListener('load', function(){
+    document.querySelector("body").classList.remove("preload");
+})
+createDisplay();
+
+function createDisplay()
+{
+    const numberButtons = document.querySelectorAll(".num");
+    numberButtons.forEach(number => {
+        number.addEventListener('click', function()
+        {
+            displayValue += this.classList[2][4];
+            console.log(displayValue);
+            display.value = displayValue;
+            number.classList.add("num-down");
+        })
+    });
+}
+
 function add(a, b) {
     return a + b;
 }
