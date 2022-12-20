@@ -10,6 +10,11 @@ window.addEventListener('load', function(){
 })
 createDisplay();
 
+function removeTransition(e)
+{
+    this.classList.remove('num-down');
+}
+
 function createDisplay()
 {
     const numberButtons = document.querySelectorAll(".num");
@@ -20,6 +25,9 @@ function createDisplay()
             console.log(displayValue);
             display.value = displayValue;
             number.classList.add("num-down");
+        });
+        numberButtons.forEach(number => {
+            number.addEventListener('transitionend', removeTransition)
         })
     });
 }
