@@ -30,6 +30,17 @@ function createDisplay()
             number.addEventListener('transitionend', removeTransition)
         })
     });
+
+    const modButtons = document.querySelectorAll(".mods");
+    let last = null;
+    modButtons.forEach(mod => {
+        mod.addEventListener('click', () => {
+            if(last != null)
+                last.classList.remove("mod-down");
+            mod.classList.add("mod-down");
+            last = mod;
+        })
+    })
 }
 
 function add(a, b) {
