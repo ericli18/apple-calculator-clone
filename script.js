@@ -4,6 +4,7 @@ let first = 0;
 let second = 0;
 let clicked = false;
 let displayValue = "";
+let curOperator = "";
 
 window.addEventListener('load', function(){
     document.querySelector("body").classList.remove("preload");
@@ -38,6 +39,8 @@ function createDisplay()
             if(last != null)
                 last.classList.remove("mod-down");
             mod.classList.add("mod-down");
+            curOperator = mod.dataset.mod;
+            console.log(curOperator);
             last = mod;
         })
     })
